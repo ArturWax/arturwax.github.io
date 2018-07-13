@@ -1,0 +1,166 @@
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: linear-gradient(to bottom, #dddddd, #fff);
+}
+
+hr {
+	height: 2px;
+	width: 100%;
+	background: #fff;
+}
+
+.header_main a {
+	text-decoration: none;
+}
+
+.header_main .navbar .nav-item {
+	margin-left: 20px;
+	font-size: 20px;
+	text-transform: capitalize;
+}
+
+.header_main .navbar .nav-item:nth-child(1) {
+	margin-left: 0;
+}
+
+.header_main .navbar .navbar-brand {
+	width: 200px;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.header_main .navbar .navbar-brand .fa {
+	margin-right: 20px;
+}
+
+.logotype {
+	margin-top: 50px;
+}
+
+/* Современные браузеры, кроме Chrome, Opera, Safari */
+
+@keyframes top-bottom {
+	/* назовём анимацию: "go-left-right" */
+	0% {
+		transform: translateY(0%);
+	}
+	50% {
+		transform: translateY(8%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+/* Префикс для Chrome, Opera, Safari */
+
+@-webkit-keyframes top-bottom {
+	from {
+		left: 0px;
+	}
+	to {
+		left: calc(100% - 50px);
+	}
+}
+
+.effect_top_bottom {
+	/* применить анимацию go-left-right */
+	/* продолжительность 3s */
+	/* количество раз: бесконечное (infinite) */
+	/* менять направление анимации каждый раз (alternate) */
+	animation: top-bottom 3s infinite;
+	-webkit-animation: top-bottom 3s infinite;
+	position: relative;
+}
+
+.price .price_b .price_b_i h4,
+#contact h4 {
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+
+.price .price_b .price_b_i .float {
+	font-size: 12px;
+}
+
+.price .fa,
+#contact .fa {
+	color: rgb(32, 243, 110);
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.price .price_b .price_b_i li,
+#contact li {
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.price .price_b .price_b_i {
+	background: rgb(140, 138, 138);
+	padding: 20px 0;
+	border-radius: 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+}
+
+.price .price_b .price_b_i ul,
+#contact ul {
+	list-style: none;
+}
+
+.contact_b {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	background: rgb(140, 138, 138);
+	padding: 20px 0;
+	border-radius: 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+}
+
+.hvr-grow {
+	display: inline-block;
+	vertical-align: middle;
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	transition-duration: 0.3s;
+	transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+	transform: scale(1.1);
+}
+
+.mm-panels>.mm-panel>.mm-listview:first-child,
+.mm-panels>.mm-panel>.mm-navbar+.mm-listview .fa {
+	margin-right: 5px;
+}
+
+.mm-panels>.mm-panel>.mm-listview:first-child,
+.mm-panels>.mm-panel>.mm-navbar+.mm-listview {
+	text-transform: capitalize;
+}
+
+@media(max-width: 992px) {
+	.price .price_b .price_b_i h4,
+	#contact h4 {
+		margin-top: 20px;
+	}
+}
+
+@media(max-width: 576px) {
+	.mm-menu_position-front {
+		max-width: 300px !important;
+	}
+}
