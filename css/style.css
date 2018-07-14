@@ -14,28 +14,28 @@ hr {
 	background: #fff;
 }
 
-.header_main a {
+#header_main a {
 	text-decoration: none;
 }
 
-.header_main .navbar .nav-item {
+#header_main .navbar .nav-item {
 	margin-left: 20px;
 	font-size: 20px;
 	text-transform: capitalize;
 }
 
-.header_main .navbar .nav-item:nth-child(1) {
+#header_main .navbar .nav-item:nth-child(1) {
 	margin-left: 0;
 }
 
-.header_main .navbar .navbar-brand {
+#header_main .navbar .navbar-brand {
 	width: 200px;
 	font-size: 30px;
 	display: flex;
 	align-items: center;
 }
 
-.header_main .navbar .navbar-brand .fa {
+#header_main .navbar .navbar-brand .fa {
 	margin-right: 20px;
 }
 
