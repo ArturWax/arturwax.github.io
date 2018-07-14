@@ -79,9 +79,13 @@ hr {
 	position: relative;
 }
 
-.price .price_b .price_b_i h4,
-#contact h4 {
+.price .price_b .price_b_i h4 {
 	margin-left: 40px;
+	margin-bottom: 20px;
+}
+#contact h4 {
+	
+	text-align: center;
 	margin-bottom: 20px;
 }
 
@@ -89,16 +93,19 @@ hr {
 	font-size: 12px;
 }
 
-.price .fa,
-#contact .fa {
+.price .fa
+{
 	color: rgb(32, 243, 110);
 	font-size: 20px;
 	margin-right: 5px;
 }
-
+#contact .fa {
+	font-size: 20px;
+	margin-right: 5px;
+}
 .price .price_b .price_b_i li,
 #contact li {
-	font-size: 15px;
+	font-size: 14px;
 	margin-top: 10px;
 }
 
@@ -110,13 +117,15 @@ hr {
 	text-transform: capitalize;
 }
 
-.price .price_b .price_b_i ul,
-#contact ul {
+.price .price_b .price_b_i ul{
 	list-style: none;
 }
-
+#contact ul {
+	list-style: none;
+	padding-left: 0;
+}
 .contact_b {
-	margin-top: 20px;
+	margin-top: 30px;
 	margin-bottom: 50px;
 	background: rgb(140, 138, 138);
 	padding: 20px 0;
@@ -125,6 +134,32 @@ hr {
 	text-transform: capitalize;
 }
 
+#contact .contact_b ul{
+	display: flex;
+	justify-content: space-between;
+}
+.my_works_b{
+	margin-top: 30px;
+	background: #e8e8e8;
+	padding: 20px 0;
+	border-radius: 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+	color: #000;
+	border: 2px dotted rgb(140, 138, 138);
+	
+}
+.my_works_b .carousel .carousel-control-prev,
+.my_works_b .carousel .carousel-control-next{
+		width: 50px;
+		height: 50px;
+		text-decoration: none;
+		top: 40%;
+	}
+	.my_works_b .fa{
+		color: #a5a4a4;
+		font-size: 50px;
+	}
 .hvr-grow {
 	display: inline-block;
 	vertical-align: middle;
@@ -152,6 +187,11 @@ hr {
 	text-transform: capitalize;
 }
 
+#contact a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
 @media(max-width: 992px) {
 	.price .price_b .price_b_i h4,
 	#contact h4 {
@@ -159,8 +199,55 @@ hr {
 	}
 }
 
-@media(max-width: 576px) {
-	.mm-menu_position-front {
-		max-width: 300px !important;
+@media(max-width: 768px) {
+
+	.price .price_b .price_b_i li,
+#contact li {
+	font-size: 12px;
+	margin-top: 10px;
+}
+.price .price_b .price_b_i h4,
+#contact h4 {
+	font-size: 18px;
+	font-weight: 500;
+}
+.my_works_b .carousel .carousel-control-prev,
+.my_works_b .carousel .carousel-control-next{
+		top: 30%;
+	}
+	.my_works_b .fa{
+		color: #a5a4a4;
+		font-size: 25px;
 	}
 }
+
+ @media(max-width: 576px){
+.price .price_b .price_b_i h4,
+#contact h4 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+}
+@media(max-width: 415px){
+	#contact .contact_b ul{
+		display: block;
+		padding-left: 40px;
+	}
+.my_works_b .carousel .carousel-control-prev,
+.my_works_b .carousel .carousel-control-next{
+		top: 20%;
+	}
+}
+ @media(max-width: 420px){
+.price .price_b .price_b_i h4,
+#contact h4 {
+	font-size: 17px;
+	margin-left: 5px;
+	font-weight: 600;
+
+}
+.price .price_b .price_b_i ul, #contact .contact_b ul{
+	padding: 0;
+}
+}  
