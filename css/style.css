@@ -46,7 +46,6 @@ hr {
 /* Современные браузеры, кроме Chrome, Opera, Safari */
 
 @keyframes top-bottom {
-	/* назовём анимацию: "go-left-right" */
 	0% {
 		transform: translateY(0%);
 	}
@@ -58,14 +57,16 @@ hr {
 	}
 }
 
-/* Префикс для Chrome, Opera, Safari */
 
 @-webkit-keyframes top-bottom {
-	from {
-		left: 0px;
+	0% {
+		transform: translateY(0%);
 	}
-	to {
-		left: calc(100% - 50px);
+	50% {
+		transform: translateY(8%);
+	}
+	100% {
+		transform: translateY(0%);
 	}
 }
 
