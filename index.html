@@ -33,7 +33,7 @@
           <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <div id="hamburger">
-              <span class="hamburger hamburger--arrowalt">
+              <span class="hamburger hamburger--arrowalt-r">
                 <span class="hamburger-box">
                   <span class="hamburger-inner"></span>
                 </span>
@@ -159,9 +159,26 @@
           </div>
         </div>
         <div class="row justify-content-center text-center">
-          <div class="col-lg-8 col-11">
+          <div class="col-lg-3">
+              <a href="/projects/apple/index.html" class="link_works hvr-push" target="_blank">apple template</a>
+          </div>
+          <div class="col-lg-3">
+              <a href="/projects/pax template/index.html" class="link_works hvr-push" target="_blank">pax template</a>
+          </div>
+          <div class="col-lg-3">
+              <a href="#" class="link_works hvr-push disabled" target="_blank">elite magic tour <i class="fa fa-cog fa-spin" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-lg-3">
+              <a href="/projects/oxxo/index.html" class="link_works hvr-push" target="_blank">oxxo</a>
+          </div>
+          <div class="col-lg-3">
+              <a href="#" class="link_works hvr-push mt-3 disabled" target="_blank">phones <i class="fa fa-cog fa-spin" aria-hidden="true"></i></a>
+          </div>
 
-            <!--               <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+
+<!--           <div class="col-lg-8 col-11">
+
+                          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                   <div class="row justify-content-center">
                       <div class="col-lg-10 col-md-7 col-sm-8 col-8">
                   <div class="carousel-inner">
@@ -184,7 +201,7 @@
                     <span class="sr-only">Next</span>
                   </a>
                 </div> -->
-          </div>
+          </div> 
         </div>
       </div>
     </div>
@@ -436,6 +453,16 @@
 
 
   <!-- Optional JavaScript -->
+  
+
+<script>
+  $(document).ready(function () {
+    $('.disabled').on('click', function (e) {
+      e.preventDefault();
+    });
+  });
+</script>
+
   <script>
     (function () {
       new Slideshow(document.getElementById('slideshow'));
@@ -555,8 +582,8 @@
           "extensions": [
             "pagedim-black",
             "position-front",
-            "position-left",
-            "theme-dark"
+            "position-right",
+            "theme-dark",
             /*      "popup" */
           ],
           onClick: {
@@ -578,7 +605,7 @@
               "position": "bottom",
               "content": [
                 /*      "<a class='fa fa-envelope' href='#/'></a>", */
-                "<a class='fa fa-twitter' href='#/'></a>",
+                "<a class='fa fa-telegram fa-2x' href='https://t.me/@artur_wax' target='_blank'></a>",
                 /*  "<a class='fa fa-facebook' href='#/'></a>" */
               ]
             },
