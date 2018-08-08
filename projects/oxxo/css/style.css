@@ -450,11 +450,6 @@ hr {
   width: 370px;
 } 
 
-.our_work_items .row{
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
 .buy_now {
   padding: 70px 0;
 }
@@ -797,6 +792,11 @@ padding-top: 0;
 .fixed-top {
 	z-index: 1;
 } 
+
+.no-gutters {
+	margin-right: -7px;
+	margin-left: -7px;
+}
 @media(max-width: 992px) {
   .mm-listitem .fa-square {
     font-size: 6px;
@@ -846,6 +846,10 @@ padding-top: 0;
     font-size: 13px;
     text-decoration: none;
     font-weight: 700;
+  }
+  .menu_top .navbar-nav .nav-item .nav-link {
+    margin-left: 8px;
+    font-size: 13px;
   }
 }
 
@@ -943,5 +947,13 @@ padding-top: 0;
 @media(max-width: 350px) {
   figure.effect-zoe .buttons {
     left: 0;
+  }
+}
+@media(max-width: 800px) {
+  .grid {
+    margin-top: -27px;
+  }
+  figure.effect-zoe figcaption {
+    padding: 0px;
   }
 }

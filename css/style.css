@@ -6,8 +6,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	/* background: linear-gradient(to bottom, #000, #fff);  */
-	background:linear-gradient(to top, #fff, rgb(190, 189, 189));
-
+	background: linear-gradient(to top, #fff, rgb(190, 189, 189));
 }
 
 hr {
@@ -15,11 +14,13 @@ hr {
 	width: 100%;
 	background: #fff;
 }
-.price_bg{
+
+.price_bg {
 	background: #ffffff;
 	border-radius: 20px;
 	height: 300px;
 }
+
 .header_main {
 	padding-top: 47%;
 	/* ratio of image * 100 */
@@ -52,18 +53,21 @@ main a {
 #header_main .navbar .navbar-brand .fa {
 	margin-right: 20px;
 }
-#header_main .arrow_bottom{
+
+#header_main .arrow_bottom {
 	position: absolute;
-bottom: 0;
-z-index: 9999;
-left: 0;
-right: 0;
-text-align: center;
+	bottom: 0;
+	z-index: 9999;
+	left: 0;
+	right: 0;
+	text-align: center;
 }
-#header_main .arrow_bottom .fa{
+
+#header_main .arrow_bottom .fa {
 	color: rgba(246, 246, 246, .7);
 	font-size: 70px;
 }
+
 .logotype {
 	margin-top: 50px;
 }
@@ -144,10 +148,12 @@ text-align: center;
 	border-radius: 20px;
 	border: 2px solid white;
 }
-.certificate_b h4{
+
+.certificate_b h4 {
 	color: #ffffff;
 }
-.certificate_b{
+
+.certificate_b {
 	background: linear-gradient(to top, #fff, rgb(165, 165, 165));
 	padding: 20px 0;
 	text-transform: capitalize;
@@ -189,9 +195,11 @@ text-align: center;
 	border: 2px solid white;
 	font-weight: 700;
 }
-.my_works_b h3{
+
+.my_works_b h3 {
 	margin-bottom: 20px;
 }
+
 .my_works_b .carousel .carousel-control-prev,
 .my_works_b .carousel .carousel-control-next {
 	width: 50px;
@@ -247,7 +255,8 @@ text-align: center;
 #mm-0 {
 	z-index: 99999;
 }
-.mm-navbar__breadcrumbs{
+
+.mm-navbar__breadcrumbs {
 	color: #ffffff !important;
 	text-align: center;
 }
@@ -264,28 +273,33 @@ text-align: center;
 }
 
 .hamburger--emphatic .hamburger-inner,
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
 	background: #ffffff;
 	height: 2px;
 }
+
 .mm-navbars_bottom {
 	bottom: 10px;
 	width: 40px;
 	right: 45%;
 	left: 45%;
 }
-#mm-0 .fa-telegram{
+
+#mm-0 .fa-telegram {
 	color: rgb(204, 204, 204);
 	padding-top: 5px;
 	padding-bottom: 5px;
 	transition: color 1s;
 }
-#mm-0 .fa-telegram:hover{
+
+#mm-0 .fa-telegram:hover {
 	color: rgb(255, 255, 255);
 	transition: color 1s;
-
 }
-#my_works .link_works{
+
+#my_works .link_works {
 	text-decoration: none;
 	display: inline-block;
 	padding: 10px 30px;
@@ -295,16 +309,35 @@ text-align: center;
 	text-align: center;
 	text-transform: uppercase;
 }
-#my_works .link_works .fa{
+
+#my_works .link_works .fa {
 	font-size: 20px;
 	margin-left: 10px;
 	color: #ffffff;
 }
+
+#top{
+	position: fixed;
+	bottom: 0;
+	right: 30px;
+	cursor: pointer;
+	font-size: 60px;
+	display: none;
+	text-align: center;
+	color: rgb(129, 129, 129);
+}
+
+#top .fa:hover {
+	color: rgb(196, 196, 196);
+	transition: 1s;
+}
+
 @media(max-width: 1015px) {
 	.header_main {
 		height: auto;
 	}
 }
+
 @media(max-width: 992px) {
 	.price .price_b .price_b_i h4,
 	#contact h4 {
