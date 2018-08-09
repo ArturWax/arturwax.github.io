@@ -257,6 +257,8 @@ main a {
 
 #mm-0 {
 	z-index: 9999;
+	position: absolute; /* Для правильного отображения меню (Google Chrome)*/
+	right: 0; /* Для правильного отображения меню (Google Chrome)*/
 }
 
 .mm-navbar__breadcrumbs {
