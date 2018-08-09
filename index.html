@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
   <link rel="shortcut icon" href="code.ico" />
-  <link href="https://fonts.googleapis.com/css?family=open+sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="mmenu/hamburgers.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
@@ -21,12 +21,13 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="js/plugins/modernizr.custom.js"></script>
   <title>Web-Develop</title>
-
 </head>
 
 <body>
+
+
   <div id="top">
-      <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+    <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
   </div>
   <div class="close mmenu d-none"></div>
 
@@ -131,7 +132,7 @@
                 <li>
                   <i class="fa fa-check" aria-hidden="true"></i> HTML 5 / CSS 3 / jQuery / JavaScript</li>
                 <li>
-                  <i class="fa fa-check" aria-hidden="true"></i> адаптивная верстка</li>
+                  <i class="fa fa-check" aria-hidden="true"></i> адаптивная и кроссбраузерная верстка</li>
               </ul>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-7 col-7">
@@ -521,67 +522,6 @@
         }
       });
     });
-  </script>
-
-
-
-  <script type="text/javascript">
-    var CharTimeout = 50; // скорость печатания
-    var StoryTimeout = 2000; // время ожидания перед переключением
-
-    var Summaries = new Array();
-    var SiteLinks = new Array();
-
-    Summaries[0] = 'col-lg-6';
-    Summaries[1] = 'display: flex;';
-    Summaries[2] = '< br >';
-    Summaries[3] = 'margin: 0;';
-    Summaries[4] = 'padding: 0;';
-    Summaries[5] = '< p >';
-    Summaries[6] = 'function() {}';
-    Summaries[7] = 'opacity: 1;';
-    Summaries[8] = 'if{ } else{ }';
-    Summaries[9] = 'm-auto';
-
-    function startTicker() {
-      massiveItemCount = Number(Summaries.length); //количество элементов массива
-      // Определяем значения запуска
-      CurrentStory = -1;
-      CurrentLength = 0;
-      // Расположение объекта
-      AnchorObject = document.getElementById("Ticker");
-      runTheTicker();
-    }
-    // Основной цикл тиккера
-    function runTheTicker() {
-      var myTimeout;
-      // Переход к следующему элементу
-      if (CurrentLength == 0) {
-        CurrentStory++;
-        CurrentStory = CurrentStory % massiveItemCount;
-        StorySummary = Summaries[CurrentStory].replace(/"/g, '-');
-        AnchorObject.href = SiteLinks[CurrentStory];
-      }
-      // Располагаем текущий текст в анкор с печатанием
-      AnchorObject.innerHTML = StorySummary.substring(0, CurrentLength) + znak();
-      // Преобразуем длину для подстроки и определяем таймер
-      if (CurrentLength != StorySummary.length) {
-        CurrentLength++;
-        myTimeout = CharTimeout;
-      } else {
-        CurrentLength = 0;
-        myTimeout = StoryTimeout;
-      }
-      // Повторяем цикл с учетом задержки
-      setTimeout("runTheTicker()", myTimeout);
-    }
-    // Генератор подстановки знака
-    function znak() {
-      if (CurrentLength == StorySummary.length) return "";
-      else return "|";
-    }
-
-    startTicker();
   </script>
 
   <script>

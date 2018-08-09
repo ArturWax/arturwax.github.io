@@ -3,8 +3,9 @@
 	height: auto;
 }
 
+
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Play', sans-serif;
 	/* background: linear-gradient(to bottom, #000, #fff);  */
 	background: linear-gradient(to top, #fff, rgb(190, 189, 189));
 }
@@ -14,7 +15,9 @@ hr {
 	width: 100%;
 	background: #fff;
 }
-
+h4{
+	font-weight: 700;
+}
 .price_bg {
 	background: #ffffff;
 	border-radius: 20px;
@@ -57,7 +60,7 @@ main a {
 #header_main .arrow_bottom {
 	position: absolute;
 	bottom: 10px;
-	z-index: 9999;
+	
 	left: 0;
 	right: 0;
 	text-align: center;
@@ -253,7 +256,7 @@ main a {
 }
 
 #mm-0 {
-	z-index: 99999;
+	z-index: 1;
 }
 
 .mm-navbar__breadcrumbs {
