@@ -202,7 +202,9 @@ main a {
 .my_works_b h3 {
 	margin-bottom: 20px;
 }
-
+.my_works_b .h3_two{
+	color: #000000;
+}
 .my_works_b .carousel .carousel-control-prev,
 .my_works_b .carousel .carousel-control-next {
 	width: 50px;
