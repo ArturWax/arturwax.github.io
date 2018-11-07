@@ -15,9 +15,11 @@ hr {
 	width: 100%;
 	background: #fff;
 }
-h4{
+
+h4 {
 	font-weight: 700;
 }
+
 .price_bg {
 	background: #ffffff;
 	border-radius: 20px;
@@ -60,7 +62,7 @@ main a {
 #header_main .arrow_bottom {
 	position: absolute;
 	bottom: 10px;
-	
+
 	left: 0;
 	right: 0;
 	text-align: center;
@@ -81,9 +83,11 @@ main a {
 	0% {
 		transform: translateY(0%);
 	}
+
 	50% {
 		transform: translateY(8%);
 	}
+
 	100% {
 		transform: translateY(0%);
 	}
@@ -93,9 +97,11 @@ main a {
 	0% {
 		transform: translateY(0%);
 	}
+
 	50% {
 		transform: translateY(8%);
 	}
+
 	100% {
 		transform: translateY(0%);
 	}
@@ -202,9 +208,11 @@ main a {
 .my_works_b h3 {
 	margin-bottom: 20px;
 }
-.my_works_b .h3_two{
+
+.my_works_b .h3_two {
 	color: #000000;
 }
+
 .my_works_b .carousel .carousel-control-prev,
 .my_works_b .carousel .carousel-control-next {
 	width: 50px;
@@ -216,6 +224,21 @@ main a {
 .my_works_b .fa {
 	color: #a5a4a4;
 	font-size: 50px;
+}
+.my_works_b .fa-code{
+	color: #fff;
+	font-size: 30px;
+}
+.my_works_b .fa-thumbs-o-up{
+	color: #000000;
+	font-size: 30px;
+	/* animation: top-bottom 1s infinite; */
+	/* animation: shake 1000ms ease-in-out infinite; */
+/* 	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0); */
 }
 
 .hvr-grow {
@@ -259,8 +282,10 @@ main a {
 
 #mm-0 {
 	z-index: 9999;
-	position: absolute; /* Для правильного отображения меню (Google Chrome)*/
-	right: 0; /* Для правильного отображения меню (Google Chrome)*/
+	position: absolute;
+	/* Для правильного отображения меню (Google Chrome)*/
+	right: 0;
+	/* Для правильного отображения меню (Google Chrome)*/
 }
 
 .mm-navbar__breadcrumbs {
@@ -323,7 +348,7 @@ main a {
 	color: #ffffff;
 }
 
-#top{
+#top {
 	position: fixed;
 	bottom: 0;
 	right: 30px;
@@ -346,6 +371,7 @@ main a {
 }
 
 @media(max-width: 992px) {
+
 	.price .price_b .price_b_i h4,
 	#contact h4 {
 		margin-top: 20px;
@@ -353,20 +379,24 @@ main a {
 }
 
 @media(max-width: 768px) {
+
 	.price .price_b .price_b_i li,
 	#contact li {
 		font-size: 12px;
 		margin-top: 10px;
 	}
+
 	.price .price_b .price_b_i h4,
 	#contact h4 {
 		font-size: 18px;
 		font-weight: 500;
 	}
+
 	.my_works_b .carousel .carousel-control-prev,
 	.my_works_b .carousel .carousel-control-next {
 		top: 30%;
 	}
+
 	.my_works_b .fa {
 		color: #a5a4a4;
 		font-size: 25px;
@@ -374,6 +404,7 @@ main a {
 }
 
 @media(max-width: 576px) {
+
 	.price .price_b .price_b_i h4,
 	#contact h4 {
 		font-size: 18px;
@@ -386,6 +417,7 @@ main a {
 		display: block;
 		padding-left: 40px;
 	}
+
 	.my_works_b .carousel .carousel-control-prev,
 	.my_works_b .carousel .carousel-control-next {
 		top: 20%;
@@ -393,12 +425,14 @@ main a {
 }
 
 @media(max-width: 420px) {
+
 	.price .price_b .price_b_i h4,
 	#contact h4 {
 		font-size: 17px;
 		margin-left: 5px;
 		font-weight: 600;
 	}
+
 	.price .price_b .price_b_i ul,
 	#contact .contact_b ul {
 		padding: 0;
