@@ -22,10 +22,14 @@
   <script src="js/plugins/modernizr.custom.js"></script>
   <title>WEB-DEVELOP</title>
 </head>
-
+<!-- Прелоадер-->
+<div id="hellopreloader">
+  <div id="hellopreloader_preload"><span class="pulse-effect">ArturWax<br>WEB-DEVELOP</span></div>
+</div>
+<!-- Прелоадер -->
 <body>
 
-
+<div id="wrapper">
   <div id="top">
     <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
   </div>
@@ -297,8 +301,8 @@
                     </div>
                     <figcaption>
                       <h2>ProWeb
-                          <br>
-                          <span>1 / 12 / 2018г</span>
+                        <br>
+                        <span>1 / 12 / 2018г</span>
                         <span>HTML / CSS / JavaScript / jQuery / PHP / Less / Gulp / Wordpress / OpenCart</span>
                       </h2>
                     </figcaption>
@@ -488,6 +492,8 @@
     </div>
   </section>
 
+</div>
+
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/jquery.min.js"></script>
@@ -504,7 +510,28 @@
 
   <!-- Optional JavaScript -->
 
-
+  <script type="text/javascript">
+    var hellopreloader = document.getElementById("hellopreloader_preload");
+    var body = document.querySelector('wrapper');
+  
+    function fadeOutnojquery(el) {
+      el.style.opacity = 1;
+      var interhellopreloader = setInterval(function () {
+        el.style.opacity = el.style.opacity - 0.05;
+        if (el.style.opacity <= 0.05) {
+          clearInterval(interhellopreloader);
+          hellopreloader.style.display = "none";
+        }
+      }, 16);
+    }
+    window.onload = function () {
+      setTimeout(function () {
+        fadeOutnojquery(hellopreloader);
+      }, 2000);
+      body.opacity('1');
+    };
+  </script>
+  
   <script>
     $(document).ready(function () {
       $('.disabled').on('click', function (e) {
@@ -590,14 +617,15 @@
                                       ]
                                    }
                                 ],  */
-          "navbars": [/*  {
-              "position": "bottom",
-              "content": [
-                    "<a class='fa fa-envelope' href='#/'></a>", 
-                "<a class='fa fa-telegram fa-2x' href='https://t.me/@artur_wax' target='_blank'></a>",
-               "<a class='fa fa-facebook' href='#/'></a>" 
-              ]
-            },*/
+          "navbars": [
+            /*  {
+                          "position": "bottom",
+                          "content": [
+                                "<a class='fa fa-envelope' href='#/'></a>", 
+                            "<a class='fa fa-telegram fa-2x' href='https://t.me/@artur_wax' target='_blank'></a>",
+                           "<a class='fa fa-facebook' href='#/'></a>" 
+                          ]
+                        },*/
             {
               "position": "top",
               "content": [

@@ -3,13 +3,35 @@
 	height: auto;
 }
 
+#hellopreloader>p {
+    display: none;
+  }
+  #hellopreloader_preload {
+	display: flex;
+	position: fixed;
+	z-index: 99999 !important;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #2C3E50 url('../images/preloader.svg') center 50% no-repeat;
+	background-size: 400px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	color: #fff;
+	
+}
 
 body {
 	font-family: 'Play', sans-serif;
 	/* background: linear-gradient(to bottom, #000, #fff);  */
 	background: linear-gradient(to top, #fff, rgb(190, 189, 189));
 }
-
+.wrapper{
+	opacity: 0;
+}
 hr {
 	height: 2px;
 	width: 100%;
